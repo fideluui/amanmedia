@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmanMedia Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" 
+    rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="logo">AmanMedia</div>
+    <hr class="horizontal">
+</header>
+
+<div class="Kotak-utama">
+
+    <div class="FotoKiri">
+        <img src= "plant.jpeg">
+        <div id="quote">
+            "Art is not what you see, but what you make others see."
+        </div>
+    </div>
+
+    <div class="Rightside">
+
+        <p class="client">CLIENT EXPERIENCE</p>
+        <h1>Share Your Story</h1>
+
+        <p class="love">
+            We loved bringing your vision to life. How did you feel about
+            our creative journey together? Your insights help us craft even
+            more meaningful experiences.
+        </p>
+
+        <div class="section">
+            <span class="number1">01</span>
+            <span class="title-section">Who are we chatting with?</span>
+        </div>
+
+        <form action="connect.php" method="post">
+        <div class="form-row">
+            <div>
+                <label>Your name</label>
+                <input type="text" class="name" name="yourname" placeholder="e.g Julianne Artiste">
+            </div>
+
+            <div>
+                <label>Email address</label>
+                <input type="email" class="email" name="youremail" placeholder="hello@yourworld.com">
+            </div>
+        </div>
+
+        <div class="section">
+            <span class="number2">02</span>
+            <span class="title-section">Tell us about the project</span>
+        </div>
+
+        <label>Project Name</label>
+        <input type="text" class="project" name="yourproject" placeholder="What did we create together?">
+<div class="form-group">
+    <label>How was the vibe? (Rating)</label>
+
+  <div class="rating-row">
+    <div class="rating">
+        <input type="radio" name="rating" id="rate5" value="5">
+        <label for="rate5">♥</label>
+
+        <input type="radio" name="rating" id="rate4" value="4">
+        <label for="rate4">♥</label>
+
+        <input type="radio" name="rating" id="rate3" value="3">
+        <label for="rate3">♥</label>
+
+        <input type="radio" name="rating" id="rate2" value="2">
+        <label for="rate2">♥</label>
+
+        <input type="radio" name="rating" id="rate1" value="1">
+        <label for="rate1">♥</label>
+    </div>
+    <span class="rating-text">Pure magic! (4/5)</span>
+  </div>
+</div>
+
+        <label>Your narrative</label>
+        <textarea class="narrative" name="yournarrative" placeholder="In your own words, how would you describe the experience?"></textarea>
+
+        <input type="submit" class="send" name="submit" value="Send Your Story">
+    </form>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-top">
+        <span class="footer1">ETHICAL STUDIO</span>
+        <span class="footer2">TRUSTED PARTNERS</span>
+    </div>
+    <p class="footer3">© 2024 AmanMedia Creative Studio. Cultivated with intention.</p>
+</footer>
+
+</body>
+</html>
